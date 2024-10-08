@@ -17,10 +17,15 @@ public class Main
     double length = input.nextDouble();
     System.out.println("Type a width:");
     double width = input.nextDouble();
-    Rectangle r1 = new Rectangle(square, square);
+    Rectangle r1 = new Rectangle(square);
     Rectangle r2 = new Rectangle(length, width);
     System.out.println(r1.toString());
     System.out.println(r2.toString());
-    // write solutions to problems here
+    System.out.println("Type a side length");
+    double sideLen = input.nextDouble();
+    RegularPolygon triangle = new RegularPolygon(sideLen);
+    RegularPolygon sq = new RegularPolygon(4, sideLen);
+    System.out.println(triangle.toString());
+    System.out.println(sq.toString());
   }
 }
